@@ -13,11 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print([1, 2, 4].reduceAny())
+        print([1.3, 2.5, 4.0].reduceAny())
+        print(["Hello", "World"].concat())
     }
-}
-
-
-
-extension ViewController {
-    
 }

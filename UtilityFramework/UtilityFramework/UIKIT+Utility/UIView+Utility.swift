@@ -17,7 +17,7 @@ extension UIView {
                    right: Bool,
                    shadowRadius: CGFloat = 2.0) {
         
-        layer.masksToBounds = false
+        layer.masksToBounds = true
         layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         layer.shadowRadius = shadowRadius
         layer.shadowOpacity = 1.0

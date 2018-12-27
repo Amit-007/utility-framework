@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4C0FEB21D495180097B498 /* Array+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FEA21D495180097B498 /* Array+Utility.swift */; };
+		EE4C0FEE21D498C50097B498 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FED21D498C50097B498 /* ReusableViewProtocol.swift */; };
+		EE4C0FF021D49B200097B498 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FEF21D49B200097B498 /* String+Utility.swift */; };
+		EE4C0FF221D49B520097B498 /* Character+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FF121D49B520097B498 /* Character+Utility.swift */; };
+		EE4C0FF421D49B8E0097B498 /* Optional+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FF321D49B8E0097B498 /* Optional+Utility.swift */; };
+		EE4C0FF621D49BA10097B498 /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FF521D49BA10097B498 /* Dictionary+Utils.swift */; };
+		EE4C0FF921D49BE60097B498 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FF721D49BE60097B498 /* UITableView+Utility.swift */; };
+		EE4C0FFA21D49BE60097B498 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C0FF821D49BE60097B498 /* UICollectionView+Utility.swift */; };
 		EEDE8D9A21AB04AC00C27CFB /* UtilityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDE8D9021AB04AC00C27CFB /* UtilityFramework.framework */; };
 		EEDE8D9F21AB04AC00C27CFB /* UtilityFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE8D9E21AB04AC00C27CFB /* UtilityFrameworkTests.swift */; };
 		EEDE8DA121AB04AC00C27CFB /* UtilityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDE8D9321AB04AC00C27CFB /* UtilityFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE4C0FEA21D495180097B498 /* Array+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utility.swift"; sourceTree = "<group>"; };
+		EE4C0FED21D498C50097B498 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		EE4C0FEF21D49B200097B498 /* String+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
+		EE4C0FF121D49B520097B498 /* Character+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Utility.swift"; sourceTree = "<group>"; };
+		EE4C0FF321D49B8E0097B498 /* Optional+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Utility.swift"; sourceTree = "<group>"; };
+		EE4C0FF521D49BA10097B498 /* Dictionary+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utils.swift"; sourceTree = "<group>"; };
+		EE4C0FF721D49BE60097B498 /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		EE4C0FF821D49BE60097B498 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utility.swift"; sourceTree = "<group>"; };
 		EEDE8D9021AB04AC00C27CFB /* UtilityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDE8D9321AB04AC00C27CFB /* UtilityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilityFramework.h; sourceTree = "<group>"; };
 		EEDE8D9421AB04AC00C27CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE4C0FEC21D498790097B498 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE4C0FED21D498C50097B498 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EEDE8D8621AB04AC00C27CFB = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,7 @@
 		EEDE8D9221AB04AC00C27CFB /* UtilityFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EE4C0FEC21D498790097B498 /* Protocols */,
 				EEDE8DD521AB05A100C27CFB /* UIComponents */,
 				EEDE8DD421AB057C00C27CFB /* Foundation+Utility */,
 				EEDE8DD321AB057C00C27CFB /* UIKIT+Utility */,
@@ -176,6 +201,8 @@
 		EEDE8DD321AB057C00C27CFB /* UIKIT+Utility */ = {
 			isa = PBXGroup;
 			children = (
+				EE4C0FF821D49BE60097B498 /* UICollectionView+Utility.swift */,
+				EE4C0FF721D49BE60097B498 /* UITableView+Utility.swift */,
 				EEDE8DD621AB05B500C27CFB /* UIView+Utility.swift */,
 			);
 			path = "UIKIT+Utility";
@@ -185,6 +212,11 @@
 			isa = PBXGroup;
 			children = (
 				EEDE8E2B21D3A8D400C27CFB /* Date+Calendar */,
+				EE4C0FEA21D495180097B498 /* Array+Utility.swift */,
+				EE4C0FEF21D49B200097B498 /* String+Utility.swift */,
+				EE4C0FF121D49B520097B498 /* Character+Utility.swift */,
+				EE4C0FF321D49B8E0097B498 /* Optional+Utility.swift */,
+				EE4C0FF521D49BA10097B498 /* Dictionary+Utils.swift */,
 			);
 			path = "Foundation+Utility";
 			sourceTree = "<group>";
@@ -378,9 +410,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDE8E3021D3A91700C27CFB /* Date+Utility.swift in Sources */,
+				EE4C0FFA21D49BE60097B498 /* UICollectionView+Utility.swift in Sources */,
 				EEDE8DD721AB05B500C27CFB /* UIView+Utility.swift in Sources */,
+				EE4C0FF421D49B8E0097B498 /* Optional+Utility.swift in Sources */,
 				EEDE8E3121D3A91700C27CFB /* Calendar+Utility.swift in Sources */,
 				EEDE8E2F21D3A91700C27CFB /* TimeZone+Utility.swift in Sources */,
+				EE4C0FF921D49BE60097B498 /* UITableView+Utility.swift in Sources */,
+				EE4C0FF021D49B200097B498 /* String+Utility.swift in Sources */,
+				EE4C0FEB21D495180097B498 /* Array+Utility.swift in Sources */,
+				EE4C0FF621D49BA10097B498 /* Dictionary+Utils.swift in Sources */,
+				EE4C0FF221D49B520097B498 /* Character+Utility.swift in Sources */,
+				EE4C0FEE21D498C50097B498 /* ReusableViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
