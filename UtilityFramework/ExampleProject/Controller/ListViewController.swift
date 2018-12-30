@@ -26,13 +26,14 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return List.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ListCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.setTitleAndDescription(title: "Profile",
-                                    descriptionText: "Choose the Right Synonym for profile Noun OUTLINE, CONTOUR, PROFILE, SILHOUETTE mean the line that bounds and gives form to something. OUTLINE applies to a line marking the outer limits or edges of a body or mass.  traced the outline of his hand  CONTOUR stresses the quality of an outline or a bounding surface as being smooth, jagged, curving, or sharply angled. a car with flowing contours  PROFILE suggests a varied and sharply defined outline against a lighter background.  a portrait of her face in profile  SILHOUETTE suggests a shape especially of a head or figure with all detail blacked out in shadow leaving only the outline clearly defined.  photograph in silhouette against a bright sky")
+        cell.selectionStyle = .none
+        let list = List.dataSource[indexPath.row]
+        cell.setTitleAndDescription(title: list.title, descriptionText: list.subtitle)
         return cell
     }
     
