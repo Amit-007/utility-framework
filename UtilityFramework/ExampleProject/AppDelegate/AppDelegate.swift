@@ -8,15 +8,17 @@
 
 import UIKit
 import CoreData
+import UtilityFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setRoot()
+        UIFont.printAvailableFonts()
         return true
     }
 
@@ -91,3 +93,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate {
+    
+    private func setRoot() {
+        let listViewController = ListViewController()
+        navigationController = UINavigationController(rootViewController: listViewController)
+        window = UIWindow(frame: .mainBounds)
+        window?.rootViewController = navigationController
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+    }
+}
